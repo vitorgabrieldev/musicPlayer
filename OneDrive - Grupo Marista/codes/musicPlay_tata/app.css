@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background: functionBar(31, 29, 29);
+}
+
+* {
+    color: #e2e2e2;
+}
+
+.container__header {
+    background: rgb(48, 46, 46);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 3rem;
+    gap: .5rem;
+}
+
+.container__header i {
+    font-size: 3rem;
+}
+
+.container__header h1 {
+    font-family: monospace;
+    font-size: 2rem;
+    user-select: none;
+}
+
+.bar__infoMusic {
+    background: rgb(51, 50, 50);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem .5rem 2rem;
+    align-items: center;
+}
+
+.functionBar {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #fefefe;
+    border-radius: 12px;
+    padding: .3rem;
+}
+
+.info__music {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #fefefe;
+    padding: .3rem 1.5rem .3rem 1.5rem;
+    border-radius: 12px;
+}
+
+.titleMusic__execution {
+    font-family: monospace;
+    user-select: none;
+}
+
+.loadMusic {
+    width: 1rem;
+    height: 1rem;
+    border: 4px solid #fefefe;
+    border-radius: 50%;
+    border-bottom: transparent 4px solid;
+    animation: loadMusic 3s infinite ease-in-out;
+}
+
+@keyframes loadMusic {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bar__infoMusic i {
+    font-size: 2rem;
+    padding: .5rem;
+    transition: .3s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bar__infoMusic i:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(46, 43, 43);
+} 
+
+.listMusics {
+    background: rgb(63, 61, 61);
+    padding: 3rem;
+}
+
+.item__music {
+    display: flex;
+    border: 1px solid #Fefefe;
+}
